@@ -88,9 +88,21 @@ RUN apt-get -y install git postgresql nano postgresql-server-dev-9.3 software-pr
 RUN pip install django psycopg2 django-toolbelt
 CMD ["/bin/bash"]
 
-##########---Kitematic---##########
+##########---Kitematic (Docker client for windows)---##########
 
-###
+###Docker toolbox
+https://www.docker.com/products/docker-toolbox
+
+###ports / volumes must be declared in Dockerfile :
+-> see https://github.com/docker/kitematic/issues/376
+
+-> create dockerfilin github (/bitbucket) repo, declaring volumes (VOLUME directive), ports (EXPOSE directive)
+-> create automated build in dockerhub( https://docs.docker.com/docker-hub/builds/ )
+-> build in dockerhub
+-> pull via kitematic
+-> if necessary, change local volume/port in kitematic
+
+
 
 
 
