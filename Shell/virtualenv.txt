@@ -1,0 +1,13 @@
+virtualenv :
+
+###install
+sudo apt-get install python-virtualenv
+OU
+sudo pip3 install virtualenv
+
+###create
+virtualenv .
+###activate
+source ./bin/activate
+
+

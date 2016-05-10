@@ -1,0 +1,6 @@
+###get user id, groups, etc
+id
+ex --> uid=1000(michal) gid=1000(michal) groups=1000(michal),27(sudo),100(users)
+
+###add group to user
+sudo usermod -a -G users `whoami`

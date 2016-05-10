@@ -29,6 +29,10 @@ docker exec -it fb33cafb4be6  bash
 
 ##########---COMMIT / SAVE / LOAD---##########
 
+###login to dockerhub
+
+docker login
+
 ###liste des conteneurs tournant ou ayant tourné
 docker ps -a
 docker ps -a | grep 60afe4036d97
